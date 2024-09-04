@@ -1,0 +1,169 @@
+@font-face {
+  font-family: "poppin";
+  src: url("/assets/Fonts/poppin/Poppins-Regular.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+.overview-content .title {
+  text-transform: none !important;
+}
+.containerOverview {
+  width: 85%;
+  margin: 0 auto;
+}
+/* media query of ebay overview section starts */
+@media (max-width: 576px) {
+  .containerOverview .overview-heading {
+    font-size: 46px;
+  }
+}
+
+/* challenges-section and role-section styling */
+.main {
+  padding: 50px 0px;
+  width: 85%;
+  margin: 0 auto;
+}
+.section-title {
+  margin-bottom: 38px;
+  font-size: 32px;
+}
+.text {
+  font-size: 26px;
+  line-height: 46px;
+  padding-bottom: 30px;
+}
+
+/* .portfolio-background {
+  background-color: unset;
+} */
+.header-images {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.workflow-wrapper .header-images .round-image img {
+  width: 200px;
+}
+
+/* understanding-section styling */
+.understanding-section .research-details {
+  background: unset;
+  line-height: 32px;
+}
+.section-bg {
+  background-color: rgba(255, 255, 255, 0.15);
+  width: 100%;
+}
+.research-objective {
+  width: 85%;
+  margin: 0 auto;
+}
+.research-heading-text {
+  padding-top: 40px;
+}
+.understanding-section ul li::marker {
+  color: rgba(0, 191, 255, 1);
+  font-size: 24px;
+}
+
+.understanding-section ul li {
+  font-size: 26px;
+}
+.understanding-section ul li strong {
+  font-weight: 700;
+  color: rgba(0, 191, 255, 1);
+}
+.understanding-section ul li span {
+  font-weight: normal;
+  line-height: 42px;
+}
+/* refarming-section styling */
+.refarming-section {
+  margin: 20px;
+}
+.refarming-section .refarming-container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 42px 0;
+}
+.refarming-section .refarming-container h2 {
+  font-size: 28px;
+  font-weight: 600;
+  padding-bottom: 42px;
+}
+.refarming-section .refarming-container p {
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 36px;
+}
+.main-div {
+  padding-top: 80px;
+  text-align: center;
+}
+.refarming-section .refarming-container .refarming-btns {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.refarming-section .refarming-container .refarming-btns button {
+  padding: 32px 20px;
+  margin: 42px 0;
+  width: 400px;
+  color: rgba(255, 255, 255, 1);
+  font-size: 28px;
+  background-color: rgba(255, 255, 255, 0.062);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+/* .refarming-section .refarming-container .refarming-btns .btn2 {
+  margin-left: 50px;
+} */
+/* media query of refarming section */
+@media (max-width: 855px) {
+  .refarming-section .refarming-container {
+    padding: 30px 0;
+  }
+  .refarming-section .refarming-container p {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .main-div {
+    padding-top: 40px;
+  }
+
+  .refarming-section .refarming-container .refarming-btns button {
+    padding: 40px 20px;
+    margin: 40px 0;
+    font-size: 26px;
+    width: 100%;
+  }
+}
+@media (max-width: 576px) {
+  .refarming-section .refarming-container .refarming-btns button {
+    padding: 40px 10px;
+    margin: 30px 0;
+    font-size: 20px;
+  }
+}
+/* visual design section styling */
+.visual-img {
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 60px;
+  padding-bottom: 143px;
+}
+.visual-img img {
+  width: 100%;
+}
+.testing-section .research-details {
+  background-color: unset;
+}

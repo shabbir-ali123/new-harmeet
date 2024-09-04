@@ -1,0 +1,270 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* Timeline Styles */
+.timeline {
+  margin-left: 80px;
+  border-left: 1px solid #00bfff;
+  font-family: "Inter", sans-serif;
+  padding-bottom: 60px;
+  position: relative;
+  width: 85%;
+}
+.work-img {
+  position: absolute;
+  left: -18px;
+  top: -28px;
+}
+.timeline-circle {
+  width: 15px;
+  height: 15px;
+  background-color: #00bfff;
+  position: absolute;
+  z-index: 999999;
+  border-radius: 50%;
+  left: -8px;
+  top: 70px;
+}
+
+.timeline__item {
+  padding-left: 67px;
+}
+.timeline-resume {
+  padding-top: 60px;
+}
+
+.timeline__title {
+  font-weight: 700;
+  margin-bottom: 60px;
+  line-height: 42px;
+  letter-spacing: 3px;
+  font-size: 28px;
+}
+.timeline__company {
+  margin-bottom: 6px;
+  font-size: 28px;
+  font-weight: 600;
+}
+.timeline__date {
+  font-weight: 400;
+  font-size: 20px;
+  color: #cccccc;
+  margin-bottom: 34px;
+}
+.timeline__subdate {
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.timeline-description {
+  margin: 32px 0px;
+}
+.timeline__project,
+.timeline__tools {
+  margin-top: 34px;
+  font-size: 24px;
+  margin-bottom: 24px;
+  letter-spacing: 2px;
+}
+
+.timeline__role-title {
+  font-weight: bold;
+  font-size: 24px;
+  margin: 24px 0px;
+}
+
+.timeline__role-list {
+  padding-left: 20px;
+}
+
+.timeline__role-list .role-list__item {
+  margin-bottom: 24px;
+  list-style: disc;
+  font-size: 26px;
+  font-weight: 200;
+  font-family: "Inter", sans-serif;
+  line-height: 42px;
+}
+
+.timeline__role-list .role-list__item:last-child {
+  margin-bottom: 0;
+}
+.dgn-title {
+  margin-bottom: 15px;
+  font-size: 28px;
+  text-transform: capitalize;
+}
+.education-title {
+  margin-top: 60px;
+}
+.resume {
+  /* position: relative; */
+}
+
+.main-heading {
+  font-size: 32px;
+  font-weight: bold;
+  text-transform: capitalize;
+  margin-bottom: 60px;
+}
+.resume-top-background {
+  top: 3%;
+  left: 5%;
+}
+.resume-right-background {
+  top: 12%;
+}
+.resume-middle-bg {
+  top: 60% !important;
+}
+.resume-header {
+  margin-top: 130px;
+  /* margin-bottom: 80px; */
+}
+.education-img {
+  position: absolute;
+  left: -18px;
+  top: 63px;
+}
+.resume-para {
+  margin-bottom: 80px;
+}
+.education-circle {
+  top: 168px;
+}
+.education-circle1 {
+  bottom: 44%;
+  width: 15px;
+  height: 15px;
+  background-color: #00bfff;
+  position: absolute;
+  z-index: 999999;
+  border-radius: 50%;
+  left: -8px;
+}
+.education-circle2 {
+  width: 15px;
+  height: 15px;
+  background-color: #00bfff;
+  position: absolute;
+  z-index: 999999;
+  border-radius: 50%;
+  left: -8px;
+  bottom: 20%;
+}
+.download-resume {
+  gap: 50px;
+}
+.download-resume-btn {
+  width: 335px;
+  height: 66px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.container {
+  background: #1d1546;
+}
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .timeline__title {
+    font-size: 32px;
+    line-height: 38px;
+  }
+  .timeline__date {
+    font-size: 20px;
+  }
+  .timeline__project,
+  .timeline__tools {
+    font-size: 24px;
+  }
+  .timeline__role-list .role-list__item {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 992px) {
+  .timeline__item {
+    padding-left: 50px;
+  }
+  .timeline__title {
+    font-size: 24px;
+    line-height: 34px;
+  }
+  .timeline__date {
+    font-size: 16px;
+  }
+  .timeline__project,
+  .timeline__tools {
+    font-size: 20px;
+  }
+  .timeline__role-list .role-list__item {
+    font-size: 22px;
+  }
+  .main-heading {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 768px) {
+  .timeline__item {
+    padding-left: 40px;
+  }
+  .timeline__title {
+    font-size: 22px;
+    line-height: 30px;
+  }
+  .timeline__date {
+    font-size: 14px;
+  }
+  .timeline__project,
+  .timeline__tools {
+    font-size: 18px;
+  }
+  .timeline__role-list .role-list__item {
+    font-size: 20px;
+  }
+  .main-heading {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 576px) {
+  .resume {
+    width: 100%;
+    /* padding: 0 10px; */
+  }
+  .timeline {
+    padding-left: 10px;
+    margin-left: 20px;
+  }
+  .timeline__item {
+    padding-left: 30px;
+  }
+  .timeline__title {
+    font-size: 20px;
+    line-height: 28px;
+  }
+  .timeline__date {
+    font-size: 12px;
+  }
+  .timeline__project,
+  .timeline__tools {
+    font-size: 16px;
+  }
+  .timeline__role-list .role-list__item {
+    font-size: 18px;
+  }
+  .main-heading {
+    font-size: 22px;
+  }
+}
+
+.resume-2 {
+  background: #28214f;
+}
+
+.dgn-tech {
+  margin-bottom: 10px;
+}
