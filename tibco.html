@@ -403,12 +403,6 @@
                     </div>
                   </div>
                 </div>
-                <div class="visual-image">
-                  <img src="./assets/images/Group 1000006878.png" />
-                  <img src="./assets/images/Group 1000006884.png" />
-                  <img src="./assets/images/Group 1000006885.png" />
-                  <img src="./assets/images/Group 1000006886.png" />
-                </div>
               </div>
 
               <!-- Visual Images -->
@@ -579,50 +573,54 @@
         }
       };
       document.addEventListener("DOMContentLoaded", function () {
-  const offset = document.querySelector(".process-details").offsetHeight;
+        const offset = document.querySelector(".process-details").offsetHeight;
 
-  function setActiveLink() {
-    const sections = document.querySelectorAll("section");
-    const links = document.querySelectorAll(".icon-container a");
-    let index = sections.length;
+        function setActiveLink() {
+          const sections = document.querySelectorAll("section");
+          const links = document.querySelectorAll(".icon-container a");
+          let index = sections.length;
 
-    while (--index && window.scrollY + offset < sections[index].offsetTop) {}
+          while (
+            --index &&
+            window.scrollY + offset < sections[index].offsetTop
+          ) {}
 
-    links.forEach((link) => {
-      link.parentElement.classList.remove("active");
-      link.parentElement
-        .querySelector(".circle-container")
-        .classList.remove("active-bg"); // Reset circle-container background color
+          links.forEach((link) => {
+            link.parentElement.classList.remove("active");
+            link.parentElement
+              .querySelector(".circle-container")
+              .classList.remove("active-bg"); // Reset circle-container background color
 
-      if (link.getAttribute("href") === `#${sections[index].id}`) {
-        link.parentElement.classList.add("active");
-        link.parentElement
-          .querySelector(".circle-container")
-          .classList.add("active-bg"); // Change circle-container background color
-      }
-    });
-  }
+            if (link.getAttribute("href") === `#${sections[index].id}`) {
+              link.parentElement.classList.add("active");
+              link.parentElement
+                .querySelector(".circle-container")
+                .classList.add("active-bg"); // Change circle-container background color
+            }
+          });
+        }
 
-  // Set active link on scroll
-  window.addEventListener("scroll", setActiveLink);
+        // Set active link on scroll
+        window.addEventListener("scroll", setActiveLink);
 
-  // Set active link on click
-  document.querySelectorAll(".icon-container a").forEach((anchor) => {
-    anchor.addEventListener("click", function () {
-      document.querySelectorAll(".icon-container").forEach((el) => {
-        el.classList.remove("active");
-        el.querySelector(".circle-container").classList.remove("active-bg");
+        // Set active link on click
+        document.querySelectorAll(".icon-container a").forEach((anchor) => {
+          anchor.addEventListener("click", function () {
+            document.querySelectorAll(".icon-container").forEach((el) => {
+              el.classList.remove("active");
+              el.querySelector(".circle-container").classList.remove(
+                "active-bg"
+              );
+            });
+            this.parentElement.classList.add("active");
+            this.parentElement
+              .querySelector(".circle-container")
+              .classList.add("active-bg");
+          });
+        });
+
+        setActiveLink();
       });
-      this.parentElement.classList.add("active");
-      this.parentElement
-        .querySelector(".circle-container")
-        .classList.add("active-bg");
-    });
-  });
-
-  setActiveLink();
-});
-
     </script>
 
     <script src="script.js"></script>
